@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TemplateTools.ConApp": {
+      "commandName": "Project",
+      "commandLineArgs": ""
+    }
+  }
+}
