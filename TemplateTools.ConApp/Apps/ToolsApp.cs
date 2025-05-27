@@ -54,9 +54,26 @@ namespace TemplateTools.ConApp.Apps
         {
             foreach (var arg in args)
             {
-                foreach (var item in arg.ToLower().Split(','))
+                var argItems = arg.Split(' ');
+
+                foreach (var argItem in argItems)
                 {
-                    CommandQueue.Enqueue(item);
+                    if (argItem.ToLower().StartsWith($"{nameof(SolutionPath).ToLower()}="))
+                    {
+                        var pathItems = argItem.Split('=');
+
+                        if (pathItems.Length > 0)
+                        {
+                            SolutionPath = pathItems[1];
+                        }
+                    }
+                    else
+                    {
+                        foreach (var cmdItem in argItem.ToLower().Split(','))
+                        {
+                            CommandQueue.Enqueue(cmdItem);
+                        }
+                    }
                 }
             }
 

@@ -1,5 +1,4 @@
 //@BaseCode
-
 using System.IO;
 
 namespace TemplateTools.ConApp.Apps

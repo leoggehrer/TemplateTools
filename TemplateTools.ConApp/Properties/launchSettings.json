@@ -2,7 +2,7 @@
   "profiles": {
     "TemplateTools.ConApp": {
       "commandName": "Project",
-      "commandLineArgs": ""
+      "commandLineArgs": "SolutionPath=C:\\Users\\g.gehrer\\source\\repos\\leoggehrer\\SEDevelopment\\SEMusicStoreAngular 6,a,x,x"
     }
   }
 }
